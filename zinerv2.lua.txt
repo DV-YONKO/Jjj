@@ -3,8 +3,8 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/T
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZierhubfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "ZINER HUB",
-    SubTitle = "Kai Wibu",
+    Title = "DV HUB",
+    SubTitle = "مطور عربي",
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
@@ -12,20 +12,20 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    profile = Window:AddTab({ Title = "Information", Icon = "apple" }),
-    Main = Window:AddTab({ Title = "Main Farm", Icon = "apple" }),
-    Sea = Window:AddTab({ Title = "Sea Event", Icon = "apple" }),
-    Setting = Window:AddTab({ Title = "Settings", Icon = "apple" }),
+    profile = Window:AddTab({ Title = "معلومات", Icon = "apple" }),
+    Main = Window:AddTab({ Title = "اوتوفارم", Icon = "apple" }),
+    Sea = Window:AddTab({ Title = "الحد", Icon = "apple" }),
+    Setting = Window:AddTab({ Title = "الإعدادات", Icon = "apple" }),
     Status = Window:AddTab({ Title = "Server Stats", Icon = "apple" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "apple" }),
-    Player = Window:AddTab({ Title = "Player pvp", Icon = "apple" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "apple" }),
-    Fruit = Window:AddTab({ Title = "Fruit Blox ESP", Icon = "apple" }),
-    Raid = Window:AddTab({ Title = "Dungeon", Icon = "apple" }),
-    Race = Window:AddTab({ Title = "Race Trial V4", Icon = "apple" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "apple" }),
+    Player = Window:AddTab({ Title = "المواجهة", Icon = "apple" }),
+    Teleport = Window:AddTab({ Title = "التنقل", Icon = "apple" }),
+    Fruit = Window:AddTab({ Title = "معرفت أماكن الفواكه", Icon = "apple" }),
+    Raid = Window:AddTab({ Title = "الرايد", Icon = "apple" }),
+    Race = Window:AddTab({ Title = "تريل ريس 4", Icon = "apple" }),
+    Shop = Window:AddTab({ Title = "المتجر", Icon = "apple" }),
 	Misc = Window:AddTab({ Title = "Miscellaneous", Icon = "apple" }),
-    Hop = Window:AddTab({ Title = "Hop Server", Icon = "apple" }),
+    Hop = Window:AddTab({ Title = "انتقال إلى سرفر آخر", Icon = "apple" }),
 }
 local Options = Fluent.Options
 do
@@ -7954,8 +7954,8 @@ end)
 end
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Fluent:Notify({
-    Title = "ZINER HUB",
-    Content = "Helllo you",
+    Title = "مطور عربي",
+    Content = "اسكربت بلوكس فروت تحت التطوير",
     Durtion = 3
 })
 warn("Cảm ơn bạn đã sử dụng hack")
