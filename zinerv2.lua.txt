@@ -13,18 +13,18 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
     profile = Window:AddTab({ Title = "معلومات", Icon = "apple" }),
-    Main = Window:AddTab({ Title = "اوتوفارم", Icon = "apple" }),
-    Sea = Window:AddTab({ Title = "الحد", Icon = "apple" }),
+    Main = Window:AddTab({ Title = "تلفيل", Icon = "apple" }),
+    Sea = Window:AddTab({ Title = "الحدث", Icon = "apple" }),
     Setting = Window:AddTab({ Title = "الإعدادات", Icon = "apple" }),
     Status = Window:AddTab({ Title = "Server Stats", Icon = "apple" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "apple" }),
+    Stats = Window:AddTab({ Title = "نقاط التلفيل", Icon = "apple" }),
     Player = Window:AddTab({ Title = "المواجهة", Icon = "apple" }),
     Teleport = Window:AddTab({ Title = "التنقل", Icon = "apple" }),
     Fruit = Window:AddTab({ Title = "معرفت أماكن الفواكه", Icon = "apple" }),
     Raid = Window:AddTab({ Title = "الرايد", Icon = "apple" }),
     Race = Window:AddTab({ Title = "تريل ريس 4", Icon = "apple" }),
     Shop = Window:AddTab({ Title = "المتجر", Icon = "apple" }),
-	Misc = Window:AddTab({ Title = "Miscellaneous", Icon = "apple" }),
+	Misc = Window:AddTab({ Title = "إعدادات آخرا", Icon = "apple" }),
     Hop = Window:AddTab({ Title = "انتقال إلى سرفر آخر", Icon = "apple" }),
 }
 local Options = Fluent.Options
@@ -7267,7 +7267,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddButton({
-	Title = "Buy Buso Haki",
+	Title = "شراء هاكي التصلب",
 	Description = "$25,000",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
@@ -7287,7 +7287,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddButton({
-	Title = "Buy Ken Haki",
+	Title = "شراء هاكي التنبؤ",
 	Description = "$700,000",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
@@ -7298,7 +7298,7 @@ local Mastery = Tabs.Shop:AddSection("Fighting Styles")
 
 
 Tabs.Shop:AddButton({
-	Title = "Buy Black Leg",
+	Title = "شراء الرجل السودا",
 	Description = "$150,000",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
@@ -7306,7 +7306,7 @@ Tabs.Shop:AddButton({
 })
 
 Tabs.Shop:AddButton({
-	Title = "Buy Electric",
+	Title = "شراء إلكتريك",
 	Description = "$500,000",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
@@ -7320,7 +7320,7 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Buy Dragon Claw",
+	Title = "شراء دراغون claw",
 	Description = "1,500F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
@@ -7328,7 +7328,7 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Buy Superhuman",
+	Title = "شراء سوبر هيومن",
 	Description = "$3,000,000",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
@@ -7342,7 +7342,7 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Buy Sharkman Karate",
+	Title = "شراء الشارك مين كاراتيه",
 	Description = "$2.500.000 5.000F",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
@@ -7350,21 +7350,21 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Buy Electric Claw",
+	Title = "شراء إلكتريك",
 	Description = "$3.000.000 5.000F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Buy Dragon Talon",
+	Title = "شراء التنين",
 	Description = "$3.000.000 5.000F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Buy Godhuman",
+	Title = "شراء القود هيومن",
 	Description = "$5.000.000 5.000F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
@@ -7383,7 +7383,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt
 local Mastery = Tabs.Shop:AddSection("Misc Items")
 
 Tabs.Shop:AddButton({
-	Title = "Refund Stats",
+	Title = "إعادة تنظيم نقاط القوى",
 	Description = "2,500F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","1")
@@ -7407,7 +7407,7 @@ local args = {[1] = "CyborgTrainer", [2] = "Buy"}
         end
     })
     Tabs.Shop:AddButton({
-        Title = "Buy Race Ghoul",
+        Title = "شراء ريس الغول",
         Description = "250 Ectoplasm",
         Callback = function()            
 local args = {[1] = "Ectoplasm", [2] = "BuyCheck", [3] = 4}
@@ -7421,7 +7421,7 @@ local args = {[1] = "Ectoplasm", [2] = "BuyCheck", [3] = 4}
 --misc
 
 Tabs.Hop:AddButton({
-	Title = "Rejoin Server",
+	Title = "إعادة دخول السرفر",
 	Description = "",
 	Callback = function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
@@ -7430,7 +7430,7 @@ Tabs.Hop:AddButton({
 
 
 Tabs.Hop:AddButton({
-	Title = "Server Hop",
+	Title = "سرفرات أقوى",
 	Description = "",
 	Callback = function()
 		Hop()
@@ -7504,7 +7504,7 @@ local Mastery = Tabs.Misc:AddSection("Team")
 
 
 Tabs.Misc:AddButton({
-	Title = "Join Pirates Team",
+	Title = "دخول تيم البحريه",
 	Description = "",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Pirates") 
@@ -7513,7 +7513,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Join Marines Team",
+	Title = "دخول تيم القراصنه",
 	Description = "",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Marines") 
@@ -7523,7 +7523,7 @@ Tabs.Misc:AddButton({
 local Mastery = Tabs.Misc:AddSection("Open Ui")
 
 Tabs.Misc:AddButton({
-	Title = "Devil Shop Menu",
+	Title = "ديفل شوب",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
@@ -7534,7 +7534,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Color Haki Menu",
+	Title = "ألوان الهاكي",
 	Description = "",
 	Callback = function()
 		game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
@@ -7570,7 +7570,7 @@ local Mastery = Tabs.Misc:AddSection("Troll player")
 
 
 Tabs.Misc:AddButton({
-	Title = "Auto Rain Fruit",
+	Title = "أمطار الفواكه لكن مو حقيقي",
 	Description = "",
 	Callback = function()
         for i, v in pairs(game:GetObjects("rbxassetid://14759368201")[1]:GetChildren()) do
@@ -7594,7 +7594,7 @@ Tabs.Misc:AddButton({
 local Mastery = Tabs.Misc:AddSection("Misc")
 
 
-local ToggleRejoin = Tabs.Misc:AddToggle("ToggleRejoin", {Title = "Auto Rejoin", Description = "",Default = true })
+local ToggleRejoin = Tabs.Misc:AddToggle("ToggleRejoin", {Title = "دخول الماب تلقائي", Description = "",Default = true })
 ToggleRejoin:OnChanged(function(Value)
 	_G.AutoRejoin = Value
 end)
@@ -7855,7 +7855,7 @@ Tabs.Misc:AddButton({
 local Mastery = Tabs.Misc:AddSection("Day")
 
 Tabs.Misc:AddButton({
-	Title = "Auto Remove Fog",
+	Title = "ازالة الاق",
 	Description = "",
 	Callback = function()
         NoFog()
@@ -7872,8 +7872,8 @@ function NoFog()
 end
 
 Tabs.profile:AddParagraph({
-        Title = "Owner",
-        Content = "by Kai Wibu"
+        Title = "DV Z z",
+        Content = "من مطور عربي"
     })
   
 Tabs.profile:AddParagraph({
