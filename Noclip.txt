@@ -31,7 +31,7 @@ Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.BorderSizePixel = 2
 Title.Size = UDim2.new(0, 210, 0, 33)
 Title.Font = Enum.Font.Highway
-Title.Text = "Noclip"
+Title.Text = "اختراق الجدار"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.FontSize = Enum.FontSize.Size32
 Title.TextSize = 30
@@ -46,7 +46,7 @@ Toggle.Position = UDim2.new(0.152380958, 0, 0.374192119, 0)
 Toggle.Size = UDim2.new(0, 146, 0, 36)
 Toggle.Font = Enum.Font.Highway
 Toggle.FontSize = Enum.FontSize.Size28
-Toggle.Text = "Toggle"
+Toggle.Text = "اضغط"
 Toggle.TextColor3 = Color3.new(1, 1, 1)
 Toggle.TextSize = 25
 Toggle.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
@@ -99,7 +99,7 @@ Credit.TextStrokeTransparency = 0
 Credit.TextWrapped = true
 
 Toggle.MouseButton1Click:connect(function()
-	if Status.Text == "off" then
+	if Status.Text == "مقفل" then
 		Clipon = true
 		Status.Text = "on"
 		Status.TextColor3 = Color3.new(0,185,0)
@@ -115,7 +115,7 @@ Toggle.MouseButton1Click:connect(function()
 				Stepped:Disconnect()
 			end
 		end)
-	elseif Status.Text == "on" then
+	elseif Status.Text == "شغال" then
 		Clipon = false
 		Status.Text = "off"
 		Status.TextColor3 = Color3.new(170,0,0)
